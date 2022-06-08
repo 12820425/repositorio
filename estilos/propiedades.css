@@ -11,29 +11,21 @@
     background-position: left top;
     }
 
-#titulo_principal{
-    grid-area: "titulo_principal";
-    background-color:#e53935;
-    grid-template-columns: 400px;
-    background-image: center center;
-}
+#logo{
+        background-color: #f7b8bc;
+        display: flex;
+        justify-content: center;
+    }
 
-#menu{
-    grid-area:"menu";
-    background-color: #da5959;
+#logo img{
+    background-color: #f7b8bc;
+    width: 25%;
+    height: 15%;
 }
-
-#recuadro{ 
-    position: sticky;
-    list-style: none;
-    background-color: #f16870;
-    top:20px;
-    font-family: 'Hurricane', cursive;
- }
  
 .portada{
 width: 100%;
-height: 30%;
+height: 100%;
 
  }
 
@@ -101,21 +93,21 @@ background-position: center center;
     font-family: 'Cinzel', serif;
 }
 
-#seccion_area-2 {
+#tarta{
     display: grid;
-    grid-template-areas: 
-    "frase" "tarta";
-    grid-template-columns:1fr 1fr;
-    width: 100%;
+    grid-template-columns:1fr 2fr;
+    width: auto;
 }
 
-#seccion_area-2 .tarta_item img{
+
+.tarta_item img{
     display: flex;
     align-items:start;
-    width: 450px;
+    width: 100%;
+    height: auto;
 }
 
-#frase{
+.tarta_frase{
     font-size: 30px;
     text-align: center;
     font-family: 'Cinzel', serif;
@@ -125,46 +117,54 @@ background-position: center center;
     justify-self: stretch;
 }
 
-
-#pie{
+.pie{
+    border: solid 1px rgb(6, 5, 5);
+    background: rgb(255, 207, 237);;   
+    width:100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    border: solid 1px black;
-    background-color: #d50000;
 }
 
 
-#pie_inicio{
+.pie--seccion1{
+    font-size: 15px;
+    border-right:solid 1px #140909;
+}
+
+.pie--seccion2{
+    font-size: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: solid 1px black;
-    background-color: #d50000;
-
-}
-
- #tabla{ 
-padding: 5px;
-
- }
- #table{
-    background-color: white;
-    border: solid 1px black;
-    text-align: center;
+    margin-top: 30px;
     }
 
-th tr{
-padding:20px;
-}
+ .pie--seccion2 img{
+     display: grid;
+     width:50%;
+     float: left;
+ }   
 
-thead{
-    background-color: rgb(255, 255, 255);
-    border-bottom: solid 5px black;
-}
+    .pie_icono{
+        display: grid;
+        float:left;
+    }
+    
+    .pie_icono img{
+    width: 35px;
+    height:35px;
+    display: grid;
+    }
 
-tr:nth-child(even){
-    background-color:  #f48fb1;
-}
+    .copyright{
+        font-size: 20px;
+        color:rgb(22, 16, 16);
+        background-color: rgb(255, 207, 237);
+    }
 
+.information{
+    font-size: 20px;
+    color: rgb(7, 6, 6);
+    background-color: rgb(255, 207, 237);
+}
 
 /*mediaquerie
 #seccion_area-1{display: grid;}
@@ -172,7 +172,6 @@ tr:nth-child(even){
     #seccion_area-1{
         grid-template-columns: repeat(2 1fr);
 }
-*/
 
 
 /* tienda */
